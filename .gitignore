@@ -1,2 +1,2 @@
 src/model.pkl
-data/*
+data/raw/*.csv*
