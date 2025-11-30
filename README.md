@@ -14,5 +14,16 @@ pip install -r requirements.txt
 dvc pull
 dvc repro
 ```
-Краткое описание пайплайна.
-Где смотреть UI MLflow.
+## Краткое описание пайплайна
+1. Пайплан загружает данные из папки data/raw, меняет метки у классов, разбивает на train/test, стандартизирует данные
+2. Далее запускаетя процесс обучения модели RandomForest классификатор
+3. В MLflow можно посмотреть трек экспермента и метрики
+   
+## Где смотреть UI MLflow.
+```bash
+mlflow ui --backend-store-uri sqlite:///mlflow.db
+```
+И перейти по адресу
+```
+http://localhost:5000
+```
