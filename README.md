@@ -7,7 +7,7 @@
 - документирование процесса через DVC и MLflow.
 
 ## Как запустить (3–6 команд).
-``bash
+```bash
 git clone <repo>
 cd <repo>
 pip install -r requirements.txt
