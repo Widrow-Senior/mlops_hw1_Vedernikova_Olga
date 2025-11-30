@@ -1,2 +1,4 @@
 src/model.pkl
 data/raw/*.csv*
+.dvc
+.dvcignore
